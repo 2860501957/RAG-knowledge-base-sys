@@ -1,0 +1,32 @@
+{"id":"xfaq-001","question":"什么是流程自动化？","expected_answer":"流程自动化是把重复的审批、通知、分派和回写动作串成可配置流程，减少人工反复处理的成本。","expected_sources":["07_workflow_automation.md"]}
+{"id":"xfaq-002","question":"Orion 支持哪些自动化场景？","expected_answer":"当前主要覆盖请假、报销、入职、权限申请、内容审核和工单分派等常见企业场景。","expected_sources":["07_workflow_automation.md"]}
+{"id":"xfaq-003","question":"如何设置流程触发条件？","expected_answer":"通常可以按事件触发、表单提交触发或定时触发来配置。简单场景适合表单触发，跨系统场景适合事件触发。","expected_sources":["07_workflow_automation.md"]}
+{"id":"xfaq-004","question":"是否支持多级审批？","expected_answer":"支持。流程可以配置串行审批，也可以配置部分节点并行审批，适合不同层级的业务流转。","expected_sources":["07_workflow_automation.md"]}
+{"id":"xfaq-005","question":"流程可以调用外部系统吗？","expected_answer":"可以通过 webhook 或预留接口把流程结果推送到外部系统，但前提是目标系统允许接收对应回调。","expected_sources":["07_workflow_automation.md"]}
+{"id":"xfaq-006","question":"如何查看流程运行日志？","expected_answer":"每次流程执行后都会记录运行日志，包括触发时间、当前节点、处理结果和失败原因，便于排查卡点。","expected_sources":["07_workflow_automation.md"]}
+{"id":"xfaq-007","question":"如何申请新员工电脑？","expected_answer":"新员工入职后，一般由行政或直属负责人提交设备申请，IT 按岗位配置电脑、显示器和基础软件。","expected_sources":["08_it_helpdesk.md"]}
+{"id":"xfaq-008","question":"VPN 连不上怎么办？","expected_answer":"先检查账号是否已开通 VPN 权限、客户端版本是否正确、网络是否能访问公司网关，再看是否需要重置证书。","expected_sources":["08_it_helpdesk.md"]}
+{"id":"xfaq-009","question":"忘记电脑登录密码怎么办？","expected_answer":"如果是本地设备密码，通常需要联系 IT 重置；如果接入统一身份平台，则走企业账号中心的密码找回流程。","expected_sources":["08_it_helpdesk.md"]}
+{"id":"xfaq-010","question":"如何申请软件许可？","expected_answer":"软件许可一般通过工单提交，填写软件名称、用途、使用人和部门，IT 会根据许可证数量和审批结果开通。","expected_sources":["08_it_helpdesk.md"]}
+{"id":"xfaq-011","question":"紧急故障怎么升级处理？","expected_answer":"如果影响到核心业务，支持人员会把工单升级为高优先级，并同步通知值班负责人或值班群。","expected_sources":["08_it_helpdesk.md"]}
+{"id":"xfaq-012","question":"设备离职归还怎么处理？","expected_answer":"离职前需要归还电脑、门禁卡和相关配件，IT 会在交接完成后统一回收并关闭相关账号权限。","expected_sources":["08_it_helpdesk.md"]}
+{"id":"xfaq-013","question":"Orion 的数据分级怎么做？","expected_answer":"一般会按公开、内部、敏感和受限几类来管理，不同级别对应不同的访问和导出限制。","expected_sources":["09_security_compliance.md"]}
+{"id":"xfaq-014","question":"可以导出客户数据吗？","expected_answer":"默认不建议随意导出客户数据。若确有业务需要，必须先确认审批、脱敏和留痕要求。","expected_sources":["09_security_compliance.md"]}
+{"id":"xfaq-015","question":"审计日志保留多久？","expected_answer":"审计日志默认保留 180 天，用于安全审查、权限排查和事故追溯。企业版可以根据合规要求延长保留周期。","expected_sources":["09_security_compliance.md"]}
+{"id":"xfaq-016","question":"Orion 的密码策略是什么？","expected_answer":"密码一般要求包含大小写字母、数字和特殊字符，并定期更换，避免长期复用旧密码。","expected_sources":["09_security_compliance.md"]}
+{"id":"xfaq-017","question":"发现异常登录怎么办？","expected_answer":"应立即冻结相关账号、通知安全负责人，并保留登录时间、IP、设备信息和操作记录。","expected_sources":["09_security_compliance.md"]}
+{"id":"xfaq-018","question":"访问权限多久复核一次？","expected_answer":"常见做法是按月或按季度做一次权限复核，确保离职人员、转岗人员和临时授权都及时清理。","expected_sources":["09_security_compliance.md"]}
+{"id":"xfaq-019","question":"如何新增一篇知识文档？","expected_answer":"通常先确认主题、整理内容、检查是否含敏感信息，再按 Markdown 或 TXT 格式导入系统。","expected_sources":["10_knowledge_governance.md"]}
+{"id":"xfaq-020","question":"谁可以发布知识文档？","expected_answer":"一般只有内容负责人或管理员可以发布，普通成员通常只能提交草稿或修改建议。","expected_sources":["10_knowledge_governance.md"]}
+{"id":"xfaq-021","question":"文档版本怎么管理？","expected_answer":"每次大改都建议保留版本号或更新时间，避免后续不知道哪一版是最新可用内容。","expected_sources":["10_knowledge_governance.md"]}
+{"id":"xfaq-022","question":"旧文档过期后怎么处理？","expected_answer":"过期文档应先下线，再重新写入更新后的版本，避免新旧规则一起出现在检索结果里。","expected_sources":["10_knowledge_governance.md"]}
+{"id":"xfaq-023","question":"支持批量导入吗？","expected_answer":"支持。系统可以一次性导入多个文档，适合知识库初始化或季度批量更新。","expected_sources":["10_knowledge_governance.md"]}
+{"id":"xfaq-024","question":"如何标记敏感信息？","expected_answer":"敏感字段应该在导入前就做脱敏，或者在文档里单独标注，避免被错误检索和展示。","expected_sources":["10_knowledge_governance.md"]}
+{"id":"xfaq-025","question":"Orion 有没有移动 App？","expected_answer":"知识库中未找到足够信息回答该问题。","expected_sources":[],"expected_behavior":"no_answer"}
+{"id":"xfaq-026","question":"是否支持视频会议？","expected_answer":"知识库中未找到足够信息回答该问题。","expected_sources":[],"expected_behavior":"no_answer"}
+{"id":"xfaq-027","question":"系统是否内置 OCR 识别？","expected_answer":"知识库中未找到足够信息回答该问题。","expected_sources":[],"expected_behavior":"no_answer"}
+{"id":"xfaq-028","question":"能不能直接审批报销？","expected_answer":"知识库中未找到足够信息回答该问题。","expected_sources":[],"expected_behavior":"no_answer"}
+{"id":"xfaq-029","question":"Orion 是否支持导出到飞书？","expected_answer":"知识库中未找到足够信息回答该问题。","expected_sources":[],"expected_behavior":"no_answer"}
+{"id":"xfaq-030","question":"支持用支付宝付款吗？","expected_answer":"知识库中未找到足够信息回答该问题。","expected_sources":[],"expected_behavior":"no_answer"}
+{"id":"xfaq-031","question":"可以给知识库配置短信通知吗？","expected_answer":"知识库中未找到足够信息回答该问题。","expected_sources":[],"expected_behavior":"no_answer"}
+{"id":"xfaq-032","question":"能不能把流程自动化直接连到 ERP 审批？","expected_answer":"知识库中未找到足够信息回答该问题。","expected_sources":[],"expected_behavior":"no_answer"}

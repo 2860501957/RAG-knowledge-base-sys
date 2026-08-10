@@ -1,0 +1,41 @@
+[project]
+name = "enterprise-kb-agent"
+version = "0.1.0"
+description = "Interview-ready enterprise knowledge-base QA agent with RAG, citations, evaluation, and optimization experiments."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.110.0",
+  "uvicorn[standard]>=0.27.0",
+  "streamlit>=1.32.0",
+  "python-multipart>=0.0.9",
+  "python-dotenv>=1.0.0",
+  "pypdf>=4.0.0",
+  "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+chroma = [
+  "chromadb>=0.4.24",
+]
+dev = [
+  "pytest>=8.0.0",
+  "httpx>=0.26.0",
+]
+langgraph = [
+  "langgraph",
+]
+browser = [
+  "playwright>=1.45.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.setuptools.packages.find]
+include = ["backend*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

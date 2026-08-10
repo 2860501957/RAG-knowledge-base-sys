@@ -1,0 +1,38 @@
+{"id":"pfq-001","question":"Orion 是做什么的？","expected_answer":"Orion 是面向企业内部知识检索和问答的协作平台，主要帮助团队处理制度咨询、产品文档检索、客服知识沉淀和研发资料查找。","expected_sources":["01_product_overview.md"]}
+{"id":"pfq-002","question":"谁适合使用 Orion？","expected_answer":"Orion 适合已经有一定文档积累、但知识分散在多个地方的团队。","expected_sources":["01_product_overview.md"]}
+{"id":"pfq-003","question":"Orion 支持哪些文档格式？","expected_answer":"当前支持 Markdown、TXT 和 PDF。","expected_sources":["01_product_overview.md"]}
+{"id":"pfq-004","question":"为什么回答要带引用？","expected_answer":"因为企业知识库问答最怕看起来很像但其实是编的，所以 Orion 会在答案末尾展示引用来源，方便用户追溯答案依据。","expected_sources":["01_product_overview.md"]}
+{"id":"pfq-005","question":"知识库里没有答案时 Orion 怎么处理？","expected_answer":"Orion 会明确提示“知识库中未找到足够信息回答该问题”，而不是自己猜测。","expected_sources":["01_product_overview.md"]}
+{"id":"pfq-006","question":"如何创建账号？","expected_answer":"通常由企业管理员通过邮箱邀请创建账号，用户点击邀请链接后完成首次登录。","expected_sources":["02_account_and_access.md"]}
+{"id":"pfq-007","question":"忘记密码怎么办？","expected_answer":"如果是本地账号，可以通过“忘记密码”重置；若企业开启了 SSO，则密码重置需要走公司统一身份平台。","expected_sources":["02_account_and_access.md"]}
+{"id":"pfq-008","question":"为什么我收不到邀请邮件？","expected_answer":"先检查垃圾邮件、企业邮箱拦截规则和收件人地址是否拼写正确。","expected_sources":["02_account_and_access.md"]}
+{"id":"pfq-009","question":"我可以同时加入多个工作区吗？","expected_answer":"可以，但是否允许取决于企业的账号策略。","expected_sources":["02_account_and_access.md"]}
+{"id":"pfq-010","question":"离职后账号会怎么样？","expected_answer":"一般会先停用账号，再由管理员决定是否保留历史数据和转移内容所有权。","expected_sources":["02_account_and_access.md"]}
+{"id":"pfq-011","question":"如何重置管理员密码？","expected_answer":"如果管理员账号还可以登录，通常可以先重置自己的密码，再到成员管理页面检查其他账号状态；如果管理员账号已经无法登录，需要由企业里另一位 Owner 或超级管理员接管重置流程。","expected_sources":["02_account_and_access.md"]}
+{"id":"pfq-012","question":"重置密码后仍然无法登录怎么办？","expected_answer":"先确认输入的是最新密码，其次检查账号是否被停用、邮箱是否拼写错误，或者企业是否已经切换到 SSO 登录。","expected_sources":["02_account_and_access.md"]}
+{"id":"pfq-013","question":"Orion 有试用期吗？","expected_answer":"有，新客户通常可以申请 14 天试用期。","expected_sources":["03_billing_and_plans.md"]}
+{"id":"pfq-014","question":"主要套餐怎么区分？","expected_answer":"基础套餐适合小团队，专业套餐会增加更大的存储和高级管理能力，企业套餐则会提供更细的权限控制、审计和安全能力。","expected_sources":["03_billing_and_plans.md"]}
+{"id":"pfq-015","question":"如何申请发票？","expected_answer":"先在账单页面确认当前套餐和支付记录，再补全企业名称、税号、开户地址和开户行信息，提交后系统会把申请流转给财务。","expected_sources":["03_billing_and_plans.md"]}
+{"id":"pfq-016","question":"账单按月还是按年？","expected_answer":"两种都支持，按年付费更适合预算固定、希望降低月度成本波动的团队，按月付费更适合先试跑流程或需求变化较快的团队。","expected_sources":["03_billing_and_plans.md"]}
+{"id":"pfq-017","question":"我可以中途升级套餐吗？","expected_answer":"可以，升级后通常立即生效，新增的功能和容量会直接开放。","expected_sources":["03_billing_and_plans.md"]}
+{"id":"pfq-018","question":"Orion 里有哪些角色？","expected_answer":"通常会有 Owner、Admin、Member 和 Guest 几种角色。","expected_sources":["04_permissions_security.md"]}
+{"id":"pfq-019","question":"是否支持 SSO？","expected_answer":"支持，企业可以接入统一身份登录，减少账号分散和密码管理成本。","expected_sources":["04_permissions_security.md"]}
+{"id":"pfq-020","question":"是否支持审计日志？","expected_answer":"支持，管理员可以查看登录、导入、导出、权限变更和删除等关键操作记录。","expected_sources":["04_permissions_security.md"]}
+{"id":"pfq-021","question":"支持哪些集成？","expected_answer":"常见集成包括 Slack、Teams、邮箱、企业网盘、工单系统和内部 API 网关。","expected_sources":["05_integrations_notifications.md"]}
+{"id":"pfq-022","question":"可以接 webhook 吗？","expected_answer":"可以，Webhook 常用于文档更新、任务流转、工单创建或审批状态变化后自动推送消息。","expected_sources":["05_integrations_notifications.md"]}
+{"id":"pfq-023","question":"Orion 会发哪些通知？","expected_answer":"常见通知包括 @提醒、评论回复、文档更新、权限变更和任务通知。","expected_sources":["05_integrations_notifications.md"]}
+{"id":"pfq-024","question":"如何提高搜索命中率？","expected_answer":"推荐把问题写得更具体，同时让文档把同一主题集中写，少把多个主题混在一个段落里。","expected_sources":["05_integrations_notifications.md"]}
+{"id":"pfq-025","question":"为什么上传的 PDF 解析不完整？","expected_answer":"通常是 PDF 里包含扫描件、图片文字或复杂表格。","expected_sources":["06_troubleshooting_support.md"]}
+{"id":"pfq-026","question":"检索结果里出现很多旧内容怎么办？","expected_answer":"先检查文档是否过期，再看索引是否重新构建成功。","expected_sources":["06_troubleshooting_support.md"]}
+{"id":"pfq-027","question":"为什么有些答案会引用多个文档？","expected_answer":"有些问题确实涉及跨主题信息，所以系统会返回多个引用帮助用户确认依据。","expected_sources":["06_troubleshooting_support.md"]}
+{"id":"pfq-028","question":"如果知识库检索不到答案，我该怎么处理？","expected_answer":"先判断是问题表达不清，还是文档本身缺失；如果是后者，就需要把相关 FAQ 或流程文档补进知识库。","expected_sources":["06_troubleshooting_support.md"]}
+{"id":"pfq-029","question":"如何和支持团队协作排障？","expected_answer":"最有效的方式是直接提供问题、时间、页面截图、检索结果和引用。","expected_sources":["06_troubleshooting_support.md"]}
+{"id":"pfq-030","question":"搜索结果为什么有时候看起来答非所问？","expected_answer":"通常是因为问题太短、关键词太少，或者文档里表达方式不同。","expected_sources":["05_integrations_notifications.md"]}
+{"id":"pfq-031","question":"Orion 是否支持导出到飞书？","expected_answer":"知识库中未找到足够信息回答该问题。","expected_sources":[],"expected_behavior":"no_answer"}
+{"id":"pfq-032","question":"Orion 有没有移动 App？","expected_answer":"知识库中未找到足够信息回答该问题。","expected_sources":[],"expected_behavior":"no_answer"}
+{"id":"pfq-033","question":"系统是否内置 OCR 识别？","expected_answer":"知识库中未找到足够信息回答该问题。","expected_sources":[],"expected_behavior":"no_answer"}
+{"id":"pfq-034","question":"能不能直接审批报销？","expected_answer":"知识库中未找到足够信息回答该问题。","expected_sources":[],"expected_behavior":"no_answer"}
+{"id":"pfq-035","question":"是否支持视频会议？","expected_answer":"知识库中未找到足够信息回答该问题。","expected_sources":[],"expected_behavior":"no_answer"}
+{"id":"pfq-036","question":"可以按客户公司名称做多租户隔离吗？","expected_answer":"知识库中未找到足够信息回答该问题。","expected_sources":[],"expected_behavior":"no_answer"}
+{"id":"pfq-037","question":"能不能设置二级域名？","expected_answer":"知识库中未找到足够信息回答该问题。","expected_sources":[],"expected_behavior":"no_answer"}
+{"id":"pfq-038","question":"支持用支付宝付款吗？","expected_answer":"知识库中未找到足够信息回答该问题。","expected_sources":[],"expected_behavior":"no_answer"}
