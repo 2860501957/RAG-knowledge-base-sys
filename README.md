@@ -1,8 +1,25 @@
 # Enterprise Knowledge Base Agent
 
+[![CI](https://github.com/2860501957/RAG-knowledge-base-sys/actions/workflows/ci.yml/badge.svg)](https://github.com/2860501957/RAG-knowledge-base-sys/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688)
+![Streamlit](https://img.shields.io/badge/Streamlit-UI-ff4b4b)
+![RAG](https://img.shields.io/badge/RAG-Agent%20Infra-purple)
+![Tests](https://img.shields.io/badge/tests-46%20passed-brightgreen)
+
 面向企业内部知识库场景的 RAG + Agent 应用。项目覆盖文档解析、向量检索、权限过滤、引用溯源、拒答策略、Agent Runtime、Run Replay、Trace Evaluation、MCP tools、LangGraph 工作流 Demo 和 Browser Use 端到端验证。
 
 这个仓库的定位不是“简单问答机器人”，而是一个可本地运行、可测试、可观测、可评估的 AI Agent 工程化样例。
+
+## 项目截图
+
+### RAG 问答、引用溯源与 Run ID
+
+![RAG answer with citations](docs/assets/streamlit-answer-result.png)
+
+### Agent Trace Evaluation
+
+![Agent trace evaluation](docs/assets/streamlit-trace-evaluation-result.png)
 
 ## 一分钟看懂项目
 
@@ -20,6 +37,12 @@
 ```
 
 默认配置使用 mock LLM、hash embedding 和本地 JSON vector store，无需 API Key 即可跑通；同时也预留 OpenAI-compatible LLM / Embedding、Chroma、LangGraph、Playwright 等可选接入。
+
+## 适合展示的方向
+
+- AI Agent 研发：工具编排、MCP tools、长期记忆、LangGraph 工作流、Browser Use Demo。
+- AI 应用开发：RAG 问答、引用溯源、拒答策略、评估集、Streamlit 产品化演示。
+- Agent Infra / 平台工程：Agent Runtime、Run Replay、Trace Evaluation、权限治理、健康检查、自动化测试。
 
 ## 核心能力
 
@@ -71,6 +94,7 @@ flowchart LR
 - [docs/architecture.md](docs/architecture.md)
 - [docs/final_parameters.md](docs/final_parameters.md)
 - [docs/optimization_log.md](docs/optimization_log.md)
+- [docs/demo_walkthrough.md](docs/demo_walkthrough.md)
 
 ## 快速开始
 
@@ -112,6 +136,18 @@ python -m backend.cli index --directory data/sample_docs
 - FastAPI Docs: http://127.0.0.1:8000/docs
 - Health Check: http://127.0.0.1:8000/health
 - Streamlit UI: http://localhost:8501
+
+## 3 分钟演示路径
+
+如果只想快速看项目能力，按下面顺序演示：
+
+1. 在“问答”页提问 `Orion SSO`，查看答案、citation 和 `Run ID`。
+2. 切换 `user_id=bob, roles=employee`，提问 `下一季度招聘预算是否冻结？`，观察权限拒答。
+3. 切换 `user_id=alice, roles=manager`，重复同一问题，观察管理层可访问受限文档。
+4. 打开“运行记录”页，按 `run_id` 展开 Runtime 时间线。
+5. 打开“评估”页，运行 Agent Trace Evaluation，查看失败步骤、慢步骤和优化建议。
+
+更完整的演示说明见 [docs/demo_walkthrough.md](docs/demo_walkthrough.md)。
 
 ## 常用演示命令
 
